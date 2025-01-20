@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div id="blogBody">
+<h1>{{ page.title }}</h1>
+<span class="postDate">{{ page.date | date_to_string }}</span>
+{%- if page.tags -%}
+    {% for tag in page.tags %}
+        <a class="postTag" href="{{site.baseurl}}/archive.html#{{tag | slugize}}">
+            #{{ tag }}
+        </a>
+    {% endfor %}
+{%- endif -%}
+{{ content }}
+</div>
+</body>
+</html>
