@@ -30,14 +30,19 @@ If you do get the workbench I think it should be pretty easy to understand and u
 ### Linux(Debian based)
 
 With linux you could get mysql or mariadb and it will be basically the same. I will go with mariadb for this example. On a debian based OS you would write this:  
-**sudo apt install mariadb-server**  
+```bash
+sudo apt install mariadb-server  
+```
 This should install and start everything, you can check it worked by writing:  
-**sudo systemctl status mariadb**
-
+```bash
+sudo systemctl status mariadb
+```
 ## Terminal Commands
 
 To start doing things with your database you write  
-**mysql \-u root \-p**  
+```bash
+mysql \-u root \-p
+``` 
 which will prompt you for your password and then you are in "database mode" where you can start writing other commands. Keep in mind you should end your commands with a semi-colon Here are some useful commands:
 
 * **show databases;** \- shows all databases you have  

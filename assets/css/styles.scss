@@ -11,9 +11,9 @@ body{
 .current {
     color: green;
   }
-li{
-    list-style-type: none;
-}
+  .tag-div li {
+    list-style-type: none; 
+  }
 
 a {
     text-decoration: none;
@@ -70,4 +70,15 @@ nav a{
 #blogBody h1{
   margin:0;
   padding:0;
+}
+.projectDate{
+  color:#c2c3c4;
+  font-size: 13px;
+}
+#leftDiv{
+float:left;
+margin-right:50px;
+}
+#rightDiv{
+float:left;
 }

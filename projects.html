@@ -1,0 +1,16 @@
+---
+title: Projects
+---
+<h1>Projects</h1>
+  {% for project in site.projects %}
+  <div >
+    <a href='https://github.com/joipoi/{{ project.name }}'>
+        <h2 >{{project.name}}</h2>
+    </a>
+        <p class="projectDate">{{ project.date | date: "%B %d, %Y" }}</p>
+        <p>{{project.description}}</p>
+   
+</div>
+  {% endfor %}
+
+

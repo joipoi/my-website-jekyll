@@ -19,12 +19,16 @@ Whether to set it up on your computer or router is best, I am not sure. I had so
 There are several different ways to do this since there are different software to control the network on linux. I will be using NetworkManager and nmcli.  Also I am using Debian.
 
 First write   
-**nmcli conn show**  
+```bash
+nmcli conn show
+```
 This will show you what network connections you currently have, find the one you want to change to static and remember the connection name. 
 
 Then you write these two lines:  
-**nmcli connection modify \<connName\> ipv4.addresses 192.168.1.105**  
-**nmcli connection modify \<connName\> ipv4.method manual**  
+```bash
+nmcli connection modify \<connName\> ipv4.addresses 192.168.1.105
+nmcli connection modify \<connName\> ipv4.method manual  
+```
 Where connName is the name you saw earlier and 192.168.1.105 is an example of a ip address you could have. Make sure whatever ip you choose is available on your network.
 
 ## Setting up static ip(via router)
