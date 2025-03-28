@@ -1,0 +1,16 @@
+---
+title: Game
+---
+<h1>Games</h1>
+
+<ul>
+  {% for game in site.games %}
+    <li class="postLI">
+      <h2 class="postTitle"><a href="{{ game.permalink }}">{{ game.title }}</a>
+        {%- if game.source -%}
+        - <a href="{{game.source}}">({{game.source}})</a>
+        {%- endif -%}
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

@@ -4,5 +4,7 @@
   link: /blog.html
 - name: Blog Archive
   link: /archive.html
+- name: Games
+  link: /game.html
 - name: Projects
   link: /projects.html

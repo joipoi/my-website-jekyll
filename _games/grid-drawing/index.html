@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/assets/games/grid-drawing/styles.css">
+  <title></title>
+</head>
+
+<body>
+  <div id="dropDownContainer">
+    <button class="dropDownButton" id="settings1Btn">Main Buttons</button>
+
+    <div id="settings1Div" class="dropDownDiv">
+      
+    <button id="drawBtn">Draw Memory</button>
+    <button id="resetBtn">Reset Memory</button>
+    <button id="resetBoardBtn">Reset Drawing</button>
+
+  </div>
+  <button class="dropDownButton" id="settings2Btn">Drawing Settings</button>
+
+  <div id="settings2Div" class="dropDownDiv">
+    <label>Width</label>
+    <input value="20" id="widthInput" type="number">
+    <br>
+    <label>Height</label>
+    <input value="20" id="heightInput" type="number">
+    <br>
+    <label>Square Size</label>
+    <input id="sizeInput" value="40" type="number">
+    <br>
+    <label>Static drawing</label>
+    <input id="tempCB" type="checkbox">
+    <br>
+    <label>Show Square Numbers</label>
+    <input id="showNumsCB" type="checkbox">
+    <br>
+    <label>Default Color</label>
+    <input id="color1Input" type="color">
+    <br>
+    <label>Drawing Color</label>
+    <input value="#FFA500" id="color2Input" type="color">
+    <br>
+    <label>Drawing Speed</label>
+    <input id="drawingTimeInput" type="range" min="1" max="100">
+   
+  </div>
+
+  </div>
+  <div id="patternStringOutput"></div>
+ 
+    <div id="squareContainer"></div>
+
+    <script src="/assets/games/grid-drawing/script.js"></script>
+</body>
+
+</html>
